@@ -30,7 +30,7 @@ mkdir -p /etc/skynx /var/log/skynx /usr/local/share/skynx/plugins /usr/local/sha
 chmod 755 /etc/skynx /var/log/skynx /usr/local/share/skynx
 
 # 2. Descarga del script principal desde el repositorio oficial
-curl -sSL https://githubusercontent.com -o /usr/local/bin/Skynx
+curl -sSL https://github.com/taquitofino-eng/FrameWork-Skynx/blob/main/Skynx.sh -o /usr/local/bin/Skynx
 chmod 755 /usr/local/bin/Skynx
 
 # 3. Inicialización del archivo de configuración exclusivo y generación de llave

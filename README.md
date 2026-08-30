@@ -1,8 +1,6 @@
 # FrameWork-Skynx
 Framework avanzado de automatización en Bash para auditorías de seguridad, escaneo asíncrono de redes, generación criptográfica de payloads y desarrollo de plugins asistido por IA local (Ollama). Diseñado exclusivamente para laboratorios autorizados.
 
-# FrameWork-Skynx 
-
 ## 1. EXENCIÓN DE RESPONSABILIDAD LEGAL (DISCLAIMER)
 
 EL USO DE ESTE SOFTWARE SIN LA AUTORIZACIÓN EXPLÍCITA DEL PROPIETARIO DE LOS SISTEMAS OBJETIVO ES ILEGAL Y CONSTITUYE UN DELITO.

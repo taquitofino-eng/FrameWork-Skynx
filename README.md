@@ -23,32 +23,28 @@ El autor no se hace responsable por el uso indebido, negligencia, daños materia
 * Reportes Consolidados: Exportación automatizada de resultados analíticos a formatos Markdown estructurado e informes HTML reactivos con desinfección de variables sensibles.
 
 ---
-
 ## 3. DESPLIEGUE E INSTALACIÓN
 
-Para realizar la instalación automatizada del framework (creación de directorios en el sistema, configuración de privilegios y derivación de la llave criptográfica única), ejecute el siguiente bloque de comandos en una terminal compatible con entornos Linux:
+Para realizar el despliegue del framework de manera automatizada en su sistema operativo, ejecute secuencialmente los siguientes dos comandos en su terminal:
 
-sudo bash -c '
-# 1. Creación de directorios locales del sistema
+```bash
+# Paso 1: Descargar el instalador automatizado desde el repositorio
+curl -sSL https://githubusercontent.com -o /usr/local/bin/Skynx
+
+# Paso 2: Creación de directorios locales del sistema
 mkdir -p /etc/skynx /var/log/skynx /usr/local/share/skynx/plugins /usr/local/share/skynx/modules
 chmod 755 /etc/skynx /var/log/skynx /usr/local/share/skynx
 
-# 2. Descarga del script principal desde el repositorio oficial
-curl -sSL https://github.com/taquitofino-eng/FrameWork-Skynx/blob/main/Skynx.sh -o /usr/local/bin/Skynx
-chmod 755 /usr/local/bin/Skynx
-
-# 3. Inicialización del archivo de configuración exclusivo y generación de llave
-if [ ! -f /etc/skynx/skynx.conf ]; then
-    key=\$(openssl rand -base64 32 | tr -d "\n")
-    local_ip=\$(ip route get 1 2>/dev/null | awk '"'"'{print \$7; exit}'"'"' || echo "127.0.0.1")
-    echo -e "LHOST=\({local_ip}\nLPORT=4444\nTIMEOUT=30\nSCAN_SPEED=4\nMAX_THREADS=8\nLOG_LEVEL=INFO\nENCRYPT_KEY=\){key}" > /etc/skynx/skynx.conf
-    chmod 600 /etc/skynx/skynx.conf
-fi
-
-echo -e "\n\033[0;32m[✓] FrameWork-Skynx instalado correctamente.\033[0m"
-echo -e "\033[1;33m[*] Inicie el entorno ejecutable mediante el comando: sudo Skynx --menu\033[0m"
-'
+# Paso 3: Conceder privilegios de ejecución al binario en el sistema
+chmod +x /usr/local/bin/Skynx
 ```
+
+Una vez descargado, inicie la herramienta con privilegios administrativos para que el framework genere automáticamente sus directorios (`/etc/skynx`, `/var/log/skynx`) y su llave criptográfica única de configuración:
+
+```bash
+sudo Skynx --menu
+```
+
 
 ---
 

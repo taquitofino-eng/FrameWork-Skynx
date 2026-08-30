@@ -1,0 +1,41 @@
+# Configuraciones locales exclusivas (Evita filtrar tu ENCRYPT_KEY)
+/etc/skynx/
+*.conf
+
+# Reportes de auditoría generados en caliente (Evita exponer vulnerabilidades o IPs)
+reporte_*.txt
+rustscan_*.txt
+masscan_*.txt
+subdominios_*.txt
+reportes_mejorados_*/
+ascii_art_*.txt
+
+# Certificados criptográficos SSL generados por el framework
+certs_*/
+
+# Payloads, binarios empaquetados y stubs resultantes
+payloads_*/
+payload_encrypted.sh
+*.exe
+*.elf
+*.apk
+*.dll
+*.gz
+
+# Capturas de tráfico de red y Handshakes inalámbricos capturados
+*.cap
+*.pcap
+*.hccapx
+
+# Bases de datos locales y archivos de caché de la Inteligencia Artificial
+*.db
+*.db-wal
+*.db-shm
+
+# Archivos basura temporales del sistema operativo y editores de código
+.DS_Store
+Thumdbs.db
+*.swp
+*~
+.idea/
+.vscode/

@@ -3,10 +3,6 @@ Framework avanzado de automatización en Bash para auditorías de seguridad, esc
 
 # FrameWork-Skynx 
 
-Framework de automatización en Bash desarrollado para auditorías de seguridad perimetral, escaneo asíncrono de redes, simulación de adversarios y orquestación de extensiones asistidas por Inteligencia Artificial local mediante Ollama.
-
----
-
 ## 1. EXENCIÓN DE RESPONSABILIDAD LEGAL (DISCLAIMER)
 
 EL USO DE ESTE SOFTWARE SIN LA AUTORIZACIÓN EXPLÍCITA DEL PROPIETARIO DE LOS SISTEMAS OBJETIVO ES ILEGAL Y CONSTITUYE UN DELITO.

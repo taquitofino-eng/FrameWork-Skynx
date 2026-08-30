@@ -10,6 +10,10 @@ Este framework ha sido desarrollado exclusivamente con fines académicos, formac
 El autor no se hace responsable por el uso indebido, negligencia, daños materiales, pérdidas de información o consecuencias legales derivadas de la ejecución de los módulos incluidos en este repositorio. Al clonar, compilar o utilizar este software, el usuario acepta operar bajo los marcos regulatorios y legislaciones vigentes de su respectiva jurisdicción.
 
 ---
+### Requisitos del Sistema
+* Sistema Operativo: Distribuciones GNU/Linux basadas en Debian (Kali Linux, Parrot OS, Ubuntu, Debian) con el gestor de paquetes `apt` nativo.
+* Entorno de Ejecución: Intérprete de comandos Bash (`/bin/bash`). No se garantiza la compatibilidad en entornos Zsh, Fish o Dash.
+* 
 
 ## 2. CARACTERÍSTICAS TÉCNICAS
 
